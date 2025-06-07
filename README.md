@@ -1,8 +1,9 @@
 ## Launch Postgres
 
-**Note 1**: edit `launch.sh` and change the container IP  (`subjectAltName = IP:<container ip>`) accordingly.
-
-**Note 2**: launching container in interactive mode, replace `docker -it` with
+* **Note 1**: edit `launch.sh` and change the container IP  (`subjectAltName = IP:<container ip>`) accordingly.
+    - edit `/etc/hosts` if necessary to assign `postgres.local` and the name
+      for the container IP.
+* **Note 2**: launching container in interactive mode, replace `docker -it` with
 `docker -d` for using daemon mode.
 
 ```bash
